@@ -98,7 +98,6 @@ class otpActivity : AppCompatActivity() {
     {
         //Initializing XML btnVerify
         btnVerify = findViewById(R.id.btnVerify)
-
                 super.onActivityResult(requestCode, resultCode, data)
                 when(requestCode)
                 {
