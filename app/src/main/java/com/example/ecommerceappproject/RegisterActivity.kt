@@ -14,9 +14,6 @@ import com.google.firebase.ktx.Firebase
 class RegisterActivity : AppCompatActivity()
 {
 
-    lateinit var etFName: EditText
-    lateinit var etLName: EditText
-    lateinit var etPhoneNumber: EditText
     lateinit var etEmail: EditText
     lateinit var etPass: EditText
     lateinit var etConfPass: EditText
@@ -34,11 +31,6 @@ class RegisterActivity : AppCompatActivity()
         etPass = findViewById(R.id.ETpassword)
         etConfPass = findViewById(R.id.ETconfirmPassword)
         btnRegister = findViewById(R.id.registerBtn)
-
-        //Radio Buttons
-        var maleChecked = findViewById<RadioButton>(R.id.male)
-        var femaleChecked = findViewById<RadioButton>(R.id.female)
-        var otherChecked = findViewById<RadioButton>(R.id.other)
 
         // Initialising auth object
         auth = Firebase.auth
