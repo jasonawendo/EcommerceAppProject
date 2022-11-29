@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.ecommerceappproject">
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EcommerceAppProject"
         tools:targetApi="31">
+        <activity
+            android:name=".Cart"
+            android:exported="false" />
+        <activity
+            android:name=".productList"
+            android:exported="false" />
         <activity
             android:name=".otpActivity"
             android:exported="false" />
